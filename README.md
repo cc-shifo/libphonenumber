@@ -59,7 +59,12 @@ Last demo update: v8.12.50.
 
 If this number is lower than the [latest release's version
 number](https://github.com/google/libphonenumber/releases), we are between
-releases and the demo may be at either version.
+releases and the demo may be at either version. E.g:
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    ...
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.2.2'
+}
 
 ## JavaScript
 
